@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://troolee.github.io/gridstack.js/demo/float.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Float grid demo</title>
+
+    <link rel="stylesheet" href="./demo_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./demo_files/gridstack.css">
+
+    <script src="./demo_files/jquery.min.js"></script>
+    <script src="./demo_files/jquery-ui.js"></script>
+    <script src="./demo_files/bootstrap.min.js"></script>
+    <script src="./demo_files/lodash.min.js"></script>
+    <script src="./demo_files/gridstack.js"></script>
+    <script src="./demo_files/gridstack.jQueryUI.js"></script>
+
+    <style type="text/css">
+        .grid-stack {
+            background: lightgoldenrodyellow;
+        }
+
+        .grid-stack-item-content {
+            color: #2c3e50;
+            text-align: center;
+            background-color: #18bc9c;
+        }
+    </style>
+<style type="text/css" data-gs-style-id="gridstack-style-40672"></style></head>
+<body style="cursor: auto;">
+    <div class="container">
+        <h1>Float grid demo - </h1>
+
+        <br>
+
+        <div class="grid-stack" data-gs-current-height="4"">
+
+            <div class="grid-stack-item" data-gs-height="1" data-gs-id="0" data-gs-width="3" data-gs-x="0" data-gs-y="0">
+                <div class="grid-stack-item-content panel" style="background-color: grey;"></div>
+            </div>
+            <div class="grid-stack-item" data-gs-height="1" data-gs-id="1" data-gs-width="3" data-gs-x="3" data-gs-y="0">
+                <div class="grid-stack-item-content panel" style="background-color: grey;"></div>
+            </div>
+            <div class="grid-stack-item" data-gs-height="1" data-gs-id="2" data-gs-width="3" data-gs-x="6" data-gs-y="0">
+                <div class="grid-stack-item-content panel" style="background-color: grey;"></div>
+            </div>
+            <div class="grid-stack-item" data-gs-height="1" data-gs-id="3" data-gs-width="3" data-gs-x="9" data-gs-y="0">
+                <div class="grid-stack-item-content panel" style="background-color: grey;"></div>
+            </div>
+
+            <div class="grid-stack-item" data-gs-height="2" data-gs-id="4" data-gs-width="3" data-gs-x="0" data-gs-y="1">
+                <div class="grid-stack-item-content panel" style="background-color: red;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            var options = {
+                disableResize: true,
+                cellHeight: 200,
+                float: true
+            };
+            $('.grid-stack').gridstack(options);
+
+            new function () {
+                this.grid = $('.grid-stack').data('gridstack');
+            };
+        });
+    </script>
+
+
+</body></html>
